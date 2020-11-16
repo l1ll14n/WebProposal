@@ -76,7 +76,7 @@ nav {
 	padding-top: 1em;
 }
 
-nav ul {
+/*nav ul {
 	max-width: 200px;
 	list-style: none;
 	margin: 0;
@@ -98,6 +98,16 @@ nav ul li a {
 nav ul li a:hover {
 	color: rgb(150, 203, 230);
 	text-decoration: underline;
+}*/
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
 }
 
 
