@@ -100,16 +100,49 @@ nav ul li a:hover {
 	text-decoration: underline;
 }*/
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 li {
   float: left;
 }
 
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
+nav ul li.previous {
+  background-color: green;
 }
 
+nav ul li.active {
+  background-color: orange;
+}
+
+nav ul li.future {
+  background-color: red;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/* li a:hover {
+  background-color: #111;
+} */
+
+.active {
+  background-color: #4CAF50;
+}
 
 /* Content Areas
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -138,7 +171,7 @@ footer {
 	grid-area: footer;
 	background: #607D8B;
 	color: white;
-	padding: 4rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -180,13 +213,16 @@ blockquote {
 
 
 /* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
 
+/*hide this after screen goes under 860 px*/
 @media screen and (max-width: 860px) {
 	body {
 		display: block;
 	}
-	nav {
+  /*hides element labeled as step (see nav section)*/
+	nav span.step {
 		display: none;
 	}
 	section {
@@ -206,9 +242,9 @@ blockquote {
 
 /* Only use sticky nav if it can display at full height */
 
-@media (min-height: 300px) {
+/*@media (min-height: 300px) {
 	nav ul {
 		position: sticky;
 		top: 0;
 	}
-}
+}*/
