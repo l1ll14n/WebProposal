@@ -16,11 +16,39 @@
 	<!-- NAVIGATION: Add your own list item links based on secion IDs and heading elements -->
 	<nav>
 		<ul>
-			<li class="previous"><a href="index.html"><span class="step-num">1. </span><span class="step">Introduction</span></a></li>
-			<li class="active"><a href="contact.html">Contact Details</a></li>
-      <li class="future"><a href="#role">Role Discovery</a></li>
-      <li class="future"><a href="#induction">Training Signup</a></li>
-			<li class="future"><a href="#finish">Next Steps</a></li>
+      <!--for each class (previous, active, future) add the corresponding class to the page currently active and the ones previous and future-->
+      <!-- put class=step-num and class=step so in style.css step class can be removed in mobile for a more condensed version of the nav bar that can then be used as the progress bar and nav bar combined-->
+			<li class="previous">
+        <a href="index.html">
+          <span class="step-num">1. </span>
+          <span class="step">Introduction</span>
+        </a>
+      </li>
+      <!--For each page to connect, add href="filename.html" in the a tag-->
+			<li class="active">
+        <a href="contact.html">
+          <span class="step-num">2. </span>
+          <span class="step">Contact Details</span>
+        </a>
+      </li>
+      <li class="future">
+        <a href="role.html">
+          <span class="step-num">3. </span>
+          <span class="step">Role Discovery</span>
+        </a>
+      </li>
+      <li class="future">
+        <a href="induction.html">
+          <span class="step-num">4. </span>
+          <span class="step">Training Signup</span>
+        </a>
+      </li>
+			<li class="future">
+        <a href="finish.html">
+          <span class="step-num">5. </span>
+          <span class="step">Next Steps</span>
+        </a>
+      </li>
 		</ul>
 	</nav>
 
