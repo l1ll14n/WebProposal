@@ -102,13 +102,13 @@ nav ul li a:hover {
 
 ul {
   list-style-type: none;
-  margin: 0% 0% 0% 25%;
+  margin: 0% 0% 0% 22%;
   padding: 0;
   overflow: hidden;
   background-color: #15749E;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 55%;
 }
 
 li {
@@ -131,7 +131,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
 }
 
@@ -139,6 +139,10 @@ li a {
 /* li a:hover {
   background-color: #111;
 } */
+li a:hover {
+  background-color: white;
+  color: #15749E;
+}
 
 .active {
   background-color: #4CAF50;
@@ -225,6 +229,17 @@ blockquote {
 	nav span.step {
 		display: none;
 	}
+  /*changes the margin slightly to centre the av bar for mobile use*/
+  ul {
+  list-style-type: none;
+  margin: 0% 0% 10% 16%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #15749E;
+  position: fixed;
+  top: 0;
+  width: 71%;
+  }
 	section {
 		padding: 0.5em;
 	}
